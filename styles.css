@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: red;
+    animation: moveBox 8s linear infinite, changeColor 8s linear infinite;
+    border:10px solid black;
+}
+
+@keyframes moveBox {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: 0;
+        left: 100%;
+        transform: translateX(-100%);
+    }
+    50% {
+        top: 100%;
+        left: 100%;
+        transform: translate(-100%, -100%);
+    }
+    75% {
+        top: 100%;
+        left: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: blue;
+    }
+    50% {
+        background-color: green;
+    }
+    75% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: red;
+    }
+}

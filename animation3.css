@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    height: 220px;
+    width: 200px;
+    animation: catu 16s infinite; 
+}
+
+@keyframes catu{
+
+    0%{
+        background: url(download\ \(1\).jpeg) no-repeat;
+    }
+
+    13%{
+        background: url(images.jpeg);
+        transform: translate(45vw, 39vh);
+        border-radius: 50%;
+    }
+
+    26%{
+        background: url(download\ \(2\).jpeg) no-repeat;
+        transform: translateX(87vw);
+        border-radius: 0%;
+    }
+
+    39%{
+        background: url(images.jpeg);
+        transform: translate(45vw, 39vh);
+        border-radius: 50%;
+    }
+
+    52%{
+        background: url(download\ \(3\).jpeg);
+        transform: translate(87vw, 68vh);
+        border-radius: 0%;
+    }
+
+    65%{
+        background: url(images.jpeg);
+        transform: translate(45vw, 39vh); 
+        border-radius: 50%;
+    }
+
+    78%{
+        background: url(download.jpeg);
+        transform: translateY(68vh);
+        border-radius: 0%;
+    }
+
+    90%{
+        background: url(images.jpeg);
+        transform: translate(45vw, 39vh);
+        border-radius: 50%; 
+    }
+
+    100%{
+        background: url(download\ \(1\).jpeg) no-repeat;
+    }
+
+}
+

@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    /* border: solid; */
+    /* border-radius: 50%; */
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    /* transform: translate(90vw, 78vh); */
+    animation: corner 16s infinite;
+}
+
+@keyframes corner {
+    0%{
+        transform: translateX(0vh);
+        background-color: red;
+    }
+
+    25%{
+        transform: translateX(90vw);
+        border-radius: 50%;
+        background-color: orange;
+    }
+
+    50%{
+        transform: translate(90vw, 78vh);
+        border-radius: 0%;
+        background-color: yellow;
+    }
+
+    75%{
+        transform: translateY(78vh);
+        border-radius: 50%;
+        background-color: bisque;
+    }
+
+    100%{
+        transform: translateX(0vh);
+        background-color: red;
+    }
+} 
+
